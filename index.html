@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CLIMATE_COMPASS</h1>
+        <div class="search-container">
+            <input type="text" id="locationInput" placeholder="Enter a city" autocomplete="off">
+            <ul id="suggestions-dropdown"></ul>
+        </div>
+        <button id="searchButton">Search</button>
+        <div class="weather-info">
+            <h2 id="location">-</h2>
+            <div id="temperature">-</div>
+            <div id="description">-</div>
+            <div class="weather-matrix">
+                <div class="matrix-row">
+                    <div class="matrix-item top-left">
+                        <span class="label">Humidity</span>
+                        <span id="humidity">-</span>
+                    </div>
+                    <div class="matrix-item top-right">
+                        <span class="label">Wind</span>
+                        <span id="wind">-</span>
+                    </div>
+                </div>
+                <div class="matrix-row center">
+                    <div class="matrix-item center-item">
+                        <span class="label">Feels Like</span>
+                        <span id="feels-like">-</span>
+                    </div>
+                </div>
+                <div class="matrix-row">
+                    <div class="matrix-item bottom-left">
+                        <span class="label">Pressure</span>
+                        <span id="pressure">-</span>
+                    </div>
+                    <div class="matrix-item bottom-right">
+                        <span class="label">Precipitation</span>
+                        <span id="precipitation">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
